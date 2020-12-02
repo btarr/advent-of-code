@@ -1,15 +1,5 @@
 # Day 1
 
-expense_report = [
-    1721,
-    979,
-    366,
-    299,
-    675,
-    1456,
-]
-
-
 def get2020(report):
     for i in range(0, len(report)):
         for j in range(0, len(report)):
@@ -19,7 +9,15 @@ def get2020(report):
                 return report[i] * report[j]
 
 
+def readReportFromFile(path):
+    report = []
+    for line in open(path):
+        report.append(int(line.strip()))
+    return report
+
+
 def main():
+    expense_report = readReportFromFile('./input/day_1_part_1.txt')
     return get2020(expense_report)
 
 
