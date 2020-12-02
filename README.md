@@ -2,3 +2,5 @@
 https://adventofcode.com/2020/
 
 I always come strapped with that mf jank code 🔫💻👍
+
+certified 🚫 not performant 🚫
